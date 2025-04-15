@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('games', function (Blueprint $table) {
+            $table->softDeletes();
             $table->id();
+            $table->string('title');
+            $table->string('slug');
+            $table->string('description');
+            $table->string('thumbnail');
+            $table->unsignedBigInteger('created_by');
             $table->timestamps();
+
+            $table->foreign('created_by')->references('id')->on('administrators');
         });
     }
 

@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('administrators', function (Blueprint $table) {
             $table->id();
+            $table->string('username');
+            $table->string('password');
+            $table->timestamp('last_login_at')->nullable();
             $table->timestamps();
         });
     }

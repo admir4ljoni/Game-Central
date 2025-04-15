@@ -12,8 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('game_versions', function (Blueprint $table) {
+            $table->softDeletes();
             $table->id();
+            $table->unsignedBigInteger('game_id');
+            $table->string('version');
+            $table->string('storage_path');
+            $table->string('changelog');
             $table->timestamps();
+
+            $table->foreign('game_id')->references('id')->on('games');
         });
     }
 
