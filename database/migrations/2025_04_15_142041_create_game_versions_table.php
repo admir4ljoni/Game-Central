@@ -17,7 +17,6 @@ return new class extends Migration
             $table->unsignedBigInteger('game_id');
             $table->string('version');
             $table->string('storage_path');
-            $table->string('changelog');
             $table->timestamps();
 
             $table->foreign('game_id')->references('id')->on('games');
