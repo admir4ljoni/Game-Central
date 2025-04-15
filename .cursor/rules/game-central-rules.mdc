@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+
+- This project use Laravel 12 and Laravel Sanctum
+- Always look up and double check with Laravel 12 documentation
+- This is API for a game website that has features of: 
+• Developer Portal: A web application for game developers to upload their
+games to the platform.
+• Administrator Portal: A web application for administrators to manage the
+platform with its users and games.
+• Gaming Portal: A web application for players to play games online in the
+browser. 
+- The API will be consumed by a ReactJS or VueJS on different project
+
+- Look up the PDF for more detailed documentations
+[Kisi-Kisi_Web_Technologies_LKS_2025 - Server_API.pdf](mdc:Kisi-Kisi_Web_Technologies_LKS_2025 - Server_API.pdf)
